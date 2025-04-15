@@ -1,0 +1,14 @@
+<div class="container"
+     (mouseenter)="hover.emit(todo?.id)"
+     (mouseleave)="hover.emit(null)">
+  <div class="container-title" 	[ngClass]="{ highlighted: isHighlighted,highlightedDes: isHiglitedDespensies}">
+    <h2 class="title"><span class="title-prefix">{{styleName(todo?.id)}}</span>{{styleRestName(todo?.id)}}<span></span></h2>
+  </div>
+  <div class="content">
+    <div class="content_save_box">
+      <span class="save_box-text">{{formatNumber(todo?.weeklyDownloads)}}</span>
+     <img class="icon"  src="https://img.icons8.com/?size=100&id=5I3FvQIPEWZl&format=png&color=000000" alt="save"/>
+    </div>
+    <span class="content-text"> {{todo?.dependencyCount}} dependencies</span>
+  </div>
+</div>

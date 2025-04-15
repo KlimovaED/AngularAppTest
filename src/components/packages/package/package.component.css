@@ -1,0 +1,49 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 20px;
+ width: 300px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px 30px;
+  gap:10px;
+}
+.content_save_box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:15px
+}
+.icon{
+  width: 24px;
+  height: 24px;
+}
+.container-title{
+  padding:0 20px;
+  border-bottom: 2px solid black;
+}
+
+.save_box-text{
+  font-weight: bold;
+  font-size: large;
+  line-height: 24px;
+}
+.content-text{
+  color: gray;
+  line-height: 24px;
+  font-size: large;
+}
+.title-prefix{
+  color: orangered;
+}
+.highlighted {
+  background: #93d5d5;
+  border-radius: 20px 20px 0 0;
+}
+.highlightedDes{
+  background: #6bca7c;
+  border-radius: 20px 20px 0 0;
+}

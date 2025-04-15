@@ -1,0 +1,12 @@
+<main class="main">
+  <div class="content-box">
+    <div class="box_active">
+    <app-form-search [searchText]="searchText" (search)="onSearchInput($event)" (reload)="onReload()" ></app-form-search>
+      <app-sort-buttons (changeSortEvent)="changeSort($event)"></app-sort-buttons>
+    </div>
+    <app-packages [searchText]="searchText" ></app-packages>
+  </div>
+</main>
+
+
+<router-outlet/>

@@ -1,0 +1,6 @@
+<div class="box">
+<div *ngFor="let todolist of filteredTodolists">
+  <app-package [isHiglitedDespensies]="isHiglitedDespensies(todolist.id)" [todo]="todolist" (hover)="onHover($event)"
+                  [isHighlighted]="isHighlighted(todolist.id)"></app-package>
+</div>
+</div>
